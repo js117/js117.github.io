@@ -3,20 +3,20 @@
  * Author:http://www.themeforest.net/user/take-themes
  */
 
- 
+
 /******************
 
--- General Styling 
+-- General Styling
 -- Some Useful Classes
--- Main Wrapper 
--- Buttons Styling 
--- Top Bar Styling 
--- Header Styling 
+-- Main Wrapper
+-- Buttons Styling
+-- Top Bar Styling
+-- Header Styling
 -- Menu Section
 -- Search Bar Stying
--- Revolution Slider arrow Style 
--- Page Header Stying 
--- List Style 
+-- Revolution Slider arrow Style
+-- Page Header Stying
+-- List Style
 -- Welcome message styling
 -- Services Block Wrapper
 -- Service with icon
@@ -26,29 +26,29 @@
 -- Pricing Table
 -- Portfolio Filter
 -- Portfolio container
--- Blog Post Type 
+-- Blog Post Type
 	-Quotation style
-	-Twitter Style 
+	-Twitter Style
 	-Link Style
 	-Social Icon Divider In Post
--- Single Post Pagination 
+-- Single Post Pagination
 -- Post Author Info Styling
 -- Social Profile Buttons ( Using In Single Post and Single Portfolio )
--- Post Comment 
--- Comment Form 
+-- Post Comment
+-- Comment Form
 -- Portfolio Grid Styling
--- Full Row Portfolio Styling 
--- Single Portfolio Style 
+-- Full Row Portfolio Styling
+-- Single Portfolio Style
 -- Social Icons (used in single portflio)
--- Diamond style portfolio styling 
--- Carousel Items Styling Inclue Blog, Portfolio Carousel 
+-- Diamond style portfolio styling
+-- Carousel Items Styling Inclue Blog, Portfolio Carousel
 -- Page Navigation (number)
 -- Divider Heading Style
 -- Clients Carousel
 -- Quotation Carousel Style
--- Center Icon 
--- Left Icon 
--- Circular Icon with  Steps 
+-- Center Icon
+-- Left Icon
+-- Circular Icon with  Steps
 -- Center Box icon
 -- Left Box icon
 -- Dark Background Class
@@ -58,7 +58,7 @@
 -- Progress Bar (Skills)
 -- Pie Charts
 -- Counter styling
--- Banners (used In Shop) 
+-- Banners (used In Shop)
 -- Shop products styling
 -- Orbutton Divider
 -- Google map
@@ -68,18 +68,18 @@
 -- Timeline styling
 -- TimeLine Carousel styling
 -- Services Ribbons
--- Services Block (Contact Page) 
+-- Services Block (Contact Page)
 -- Verticle Price Table
 -- Sidebar widget
 -- Product Range Slider
 -- Product Owl Carousel
 -- Social icons style 2 ( App Home Page )
 -- Products dropdown
--- Single Product Slider 
+-- Single Product Slider
 -- Number Button style
 -- Footer Styling
 
- 
+
 ************** General Styling **************/
 
 body {
@@ -375,7 +375,7 @@ ul.megamenu li {
 
 .mtop0 {
 	margin-top: 0;
-} 
+}
 
 
 /************ End of Seprator ********** */
@@ -1108,7 +1108,7 @@ ul.navbar-nav > li > a:hover {
 	height: 0!important;
 }
 
-.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover {
 	color: #e4e4e4;
 	background: #00a99d;
@@ -1122,7 +1122,7 @@ ul.navbar-nav > li > a:hover {
 	color: #606060 !important;
 }
 
-.header-onepage .navbar-nav .active a, 
+.header-onepage .navbar-nav .active a,
 .header-onepage .navbar-nav a:hover {
 	color: #e4e4e4 !important;
 	background: #00a99d;
@@ -1136,7 +1136,7 @@ ul.navbar-nav > li > a:hover {
 	color: #262626;
 }
 
-.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:hover,
 .navbar-nav>li.menu-item-has-children:hover:before {
 	color: #e4e4e4;
 	background: #00a99d;
@@ -1318,9 +1318,9 @@ ul.navbar-nav > li > a:hover {
 
 /* 4 - Menu Section End
 ---------------------------------------------------------------------- */
- 
+
 /********** Search Bar Styling ***********/
- 
+
 .uh-search {
 	position: relative;
 	z-index: 9;
@@ -2467,7 +2467,7 @@ div.owl-theme .owl-controls .owl-page.active span {
 	background: #e4e4e4;
 }
 
-.price_table.style2:hover .hostingfeature , 
+.price_table.style2:hover .hostingfeature ,
 .price_table.style2:hover .priceinfo {
 	color: #8a8a8a !important;
 }
@@ -2806,6 +2806,16 @@ content: "\7b";
 
 .laptop_slider {
 	background: url(../demo/home/mockup.png) no-repeat;
+}
+
+/************** Features ***********/
+
+.feature-img{
+	text-align: center;
+}
+
+.feature-text{
+	padding: 0px 130px 0px 130px;
 }
 
 /******** Single Post pagination ***********/
@@ -4132,9 +4142,9 @@ section.like_button .button_wrapper:after {
 
 .shortcode-element h3 {
 	position:relative;
-	font-size: 18px; 
-	font-weight: bold; 
-	text-transform: uppercase; 
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
 	color: #383838;
 	margin:0 0 5px;
 }
@@ -6771,9 +6781,9 @@ span.dropcap1 {
 
 
 
- 
+
  /************* TimeLine styling *****************/
- 
+
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	width: 90%;
@@ -7810,7 +7820,7 @@ left:5px;
 /* ==========================================================================
    08. PRICES
    ========================================================================== */
-   
+
 .prices-plan {
 	position: relative;
 }
@@ -9405,23 +9415,23 @@ input.form-control {
 
 /******* coupon code Input *********/
 
-#newsletterform {	
+#newsletterform {
 	width:320px;
 	margin:0 auto;
 }
 
-#newsletterform input {	
+#newsletterform input {
 	width:220px;
 	float:left;
 	font-weight:500;
 }
 
-#newsletterform input:focus {	
+#newsletterform input:focus {
 	font-style:normal;
 	font-size:14px;
 }
 
-#newsletterform #newslettersubmit {	
+#newsletterform #newslettersubmit {
 	color:#e4e4e4;
 	font-style:normal;
 	width:200px;
@@ -10153,8 +10163,8 @@ position: absolute;
 }
 
 .post-blockquote .quot-author {
-	font-size: 13px; 
-	color: #00a99d; 
+	font-size: 13px;
+	color: #00a99d;
 	font-weight:400;
 	text-align: right;
 	display: table;
@@ -10951,7 +10961,7 @@ position: absolute;
 	z-index: 999;
 	border-radius: 50%;
 	display: block !important;
-	cursor: url(images/magnify.png), 
+	cursor: url(images/magnify.png),
 	url(images/magnify.png), none;
 	display: block !important;
 }
@@ -11094,7 +11104,7 @@ position: absolute;
 	height: 0!important;
 }
 
-.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover {
 	color: #00a99d;
 	background: #00a99d;
@@ -11104,7 +11114,7 @@ position: absolute;
 	color: #262626;
 }
 
-.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:hover,
 .navbar-nav>li.menu-item-has-children:hover:before {
 	color: #e4e4e4;
 	background: #00a99d;
@@ -11842,7 +11852,7 @@ div#carousel .flex-direction-nav .flex-next {
 	border-radius: 4px;
 }
 
-#uh-cart-wrapper .uh-cart-item:first-child, 
+#uh-cart-wrapper .uh-cart-item:first-child,
 .uh-cart-wrapper .uh-cart-item:first-child {
 	border-top: none;
 }
@@ -12044,7 +12054,7 @@ margin-top: 21px;
 	margin-right: 10px;
 }
 
-.ps-fb, 
+.ps-fb,
 .ps-tweet,
 .ps-gplus,
 .ps-pinst {
@@ -12061,7 +12071,7 @@ margin-top: 21px;
 	opacity: 1;
 }
 
-.ps-fb:hover, 
+.ps-fb:hover,
 .ps-tweet:hover,
 .ps-gplus:hover,
 .ps-pinst:hover {
@@ -13368,11 +13378,11 @@ a.uh-hidden-bar-toggle:after {
 	width: 191px;
 }
 
-.is-img1, 
-.is-img2, 
-.is-img3, 
-.is-img4, 
-.is-img5, 
+.is-img1,
+.is-img2,
+.is-img3,
+.is-img4,
+.is-img5,
 .is-img6 {
 	position: absolute;
 	top: 0px;
@@ -13661,8 +13671,8 @@ margin-right:5px;
 }
 
 .menu-newsletter p {
-	font-size: 13px; 
-	color: #ccc !important; 
+	font-size: 13px;
+	color: #ccc !important;
 	line-height:22px;
 	width:300px;
 	margin:0 0 25px;
@@ -14372,7 +14382,7 @@ display:none;
 	position:relative;
 	left: 0px;
 	width:100%;
-	
+
 }
 
 .side-small-menu li:hover a {
@@ -14658,7 +14668,7 @@ margin-right:-0px;
 
 }
 }
-	
+
 .uh-logo h1 a, .u-header-one .navbar-brand .a, .one-header-fixed h1 a {
 	position:relative;
 }
@@ -14834,22 +14844,22 @@ left: 127px;
 .fullscreen-container:hover .tp-leftarrow.tparrows.default.round {
     left: 0px !important;
 	transition:.4s;
-}	
+}
 
 .tp-rightarrow.tparrows.default.round {
     position: absolute;
     right: -50px !important;
 	transition:.4s;
 
-}	
+}
 
 .fullscreen-container:hover .tp-rightarrow.tparrows.default.round {
     right: 0px !important;
 	transition:.4s;
-}	
+}
 
 .tp-leftarrow.tparrows.default.round:hover ,
-.tp-rightarrow.tparrows.default.round:hover { 
+.tp-rightarrow.tparrows.default.round:hover {
 background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
 }
 
@@ -14926,7 +14936,7 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
     }
 
     @-webkit-keyframes spin {
-        0%   { 
+        0%   {
             -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
             -ms-transform: rotate(0deg);  /* IE 9 */
             transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
@@ -14938,7 +14948,7 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
         }
     }
     @keyframes spin {
-        0%   { 
+        0%   {
             -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
             -ms-transform: rotate(0deg);  /* IE 9 */
             transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
@@ -14976,7 +14986,7 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
             -ms-transform: translateX(-100%);  /* IE 9 */
                 transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+        -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
                 transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     }
 
@@ -14985,13 +14995,13 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
             -ms-transform: translateX(100%);  /* IE 9 */
                 transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
 
--webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
+-webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
         transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     }
-    
+
     .loaded #loader {
         opacity: 0;
-        -webkit-transition: all 0.3s ease-out;  
+        -webkit-transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
     }
     .loaded #loader-wrapper {
@@ -15001,10 +15011,10 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
             -ms-transform: translateY(-100%);  /* IE 9 */
                 transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
 
-        -webkit-transition: all 0.3s 1s ease-out;  
+        -webkit-transition: all 0.3s 1s ease-out;
                 transition: all 0.3s 1s ease-out;
     }
-    
+
     /* JavaScript Turned Off */
     .no-js #loader-wrapper {
         display: none;
@@ -15012,8 +15022,8 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
     .no-js h1 {
         color: #222222;
     }
-	
-	
+
+
 	#slider-style-2 .tp-bullets {
  display:none;
 }
