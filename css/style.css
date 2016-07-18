@@ -5576,7 +5576,7 @@ h3.center_box_icon.step_circle:hover .step_number {
 
 .u-social {
 	background: #333333;
-	padding: 12px 0 60px;
+	padding: 12px 0 0px;
 }
 
 .u-social ul {
@@ -8198,10 +8198,7 @@ border-radius:5px;
 	background: #8a8a8a;
 }
 
-
-
 /******** Product Owl Carousel ********/
-
 
 .product_ad .caption {
 	position: relative;
@@ -9606,6 +9603,7 @@ footer .col-md-3:nth-child(1) img, .uh-hidden-bar .col-md-3:nth-child(1) img {
 
 .uf-newsletter {
 	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
 .uf-newsletter input {
@@ -15023,8 +15021,7 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
         color: #222222;
     }
 
-
-	#slider-style-2 .tp-bullets {
+#slider-style-2 .tp-bullets {
  display:none;
 }
 .slider-btn7:hover{
@@ -15035,4 +15032,16 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
 }
 #getCSSModal.modal,#getCSSModal.modal .modal-dialog{
 	z-index:100000;
+}
+
+/*New Custom CSS*/
+
+#compare{
+	position:relative;
+	padding-top:100px;
+}
+
+#features{
+	position:relative;
+	padding-top:100px;
 }
