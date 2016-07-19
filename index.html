@@ -807,10 +807,10 @@
 					<p>Curabitur eleifend urna tempor magna, in sceler volutpat honcus faucibus. Nam dapibus mollis.</p>
 
 					<form action="http://formspree.io/tianyuan.zhao@utoronto.ca" method="post" class="uf-newsletter">
-					  <input type="text" name="name" placeholder="name">
-						<input type="text" name="email" placeholder="email">
-						<input type="text" name="subject" placeholder="subject">
-						<input type="text" name="body" placeholder="body">
+					  <input type="text" name="name" placeholder="full name" required>
+						<input type="text" name="email" pattern="[^ @]*@[^ @]*" placeholder="email address" required>
+						<input type="text" name="subject" placeholder="subject" required>
+						<input type="text" name="body" placeholder="body" required>
 						<button type="submit" name="Send" value="Send">Send</button>
 					</form>
 
