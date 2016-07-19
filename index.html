@@ -281,7 +281,7 @@
 					<div class="tp-caption lfl" data-speed="500"  data-start="2600" data-x="46"	data-y="420"  style="font-weight: 700;font-size: 18px; padding-left: 0px;"><span style="position:relative;top:2px;" class="icon_check highlight-color"></span>2 YEAR WARRANTY</div>
 
 					<div class="tp-caption sfb slider-btn1" style="padding:10px 0px;color:#e4e4e4;font-weight:700;text-transform:uppercase;border-radius:4px" data-speed="500"  data-start="1500" data-endspeed="500" data-x="46" data-y="450">
-						<a href="#" style="color:#e4e4e4; padding:10px 17px;">
+						<a href="order.html" style="color:#e4e4e4; padding:10px 17px;">
 							<i class="icon_cart" style="margin-right:5px;"></i>
 							RESERVE YOURS FOR ONLY $195.00
 						</a>
@@ -483,13 +483,15 @@
 	</div>
 
 	<!-- Testimonial section -->
-	<section id="testimonials" class="quote-style2 aligncenter wow animated fadeInLeft" data-stellar-background-ratio="0.3" >
+	<section id="testimonials" class="quote-style2 aligncenter wow animated fadeInLeft">
 
 		<div class="quotation_icon">
 			<span><i class="icon_quotations"></i></span>
 		</div>
 
 		<h1 style="text-align:center; padding: 15px 0px 0px 0px; margin-bottom: 0px; color:white;">Testimonials</h1>
+
+		<img class="circle-img" src="images/BSR-Prof2.png" style="width:15%;"></img>
 
 		<div class="container">
 			<div class="row">
@@ -543,7 +545,7 @@
           <thead>
             <tr>
               <th></th>
-              <th>[PLATFORM_NAME]</th>
+              <th>Apollo</th>
               <th>Arm 3.0</th>
               <th>Mover6</th>
               <th>Baxter</th>
@@ -780,7 +782,7 @@
 					</h3>
 				</div>
 				<div class="col-md-3">
-					<a href="#" class="pull-right btn-regular btn-full-green mobile_center btn-icon">RESERVE YOURS FOR ONLY $195.00<span class="icon_cart"></span></a>
+					<a href="order.html" class="pull-right btn-regular btn-full-green mobile_center btn-icon">RESERVE YOURS FOR ONLY $195.00<span class="icon_cart"></span></a>
 				</div>
 			</div>
 		</div>
@@ -801,16 +803,25 @@
 					</ul>
 				</div>
 				<div class="col-md-6">
-					<h5>Newsletter Signup</h5>
+					<h5>Contact Us</h5>
 					<p>Curabitur eleifend urna tempor magna, in sceler volutpat honcus faucibus. Nam dapibus mollis.</p>
 
-					<!-- <form method="POST" action="mailto:info@bigsolverobotics.com" enctype="text/plain" class="uf-newsletter"> -->
-					<form method="GET" action="mailto:tianyuan.zhoa@utoronto.ca" enctype="text/plain" class="uf-newsletter">
+					<form action="http://formspree.io/tianyuan.zhao@utoronto.ca" method="post">
+					  <input type="text" name="name" placeholder="name">
+						<input type="text" name="email" placeholder="email">
+						<input type="text" name="subject" placeholder="subject">
+						<input type="text" name="body" placeholder="body">
+					  <input type="submit" value="Send">
+					</form>
+
+					<form method="POST" action="mailto:info@bigsolverobotics.com" enctype="text/plain" class="uf-newsletter">
+
+					<form method="POST" action="sendmemail.php" enctype="text/plain" class="uf-newsletter">
 						<input type="text" name="name" placeholder="Full Name" required>
 						<input type="text" name="email" pattern="[^ @]*@[^ @]*" placeholder="Email Address" required>
 						<input type="text" name="subject" placeholder="Subject" required>
-						<!-- <input type="text" name"body" placeholder="Body" required> -->
-						<button type="submit" name="Submit" style="margin-top:30px">Sign Up</button>
+						<input type="text" name"message" placeholder="Body" required>
+						<button type="submit" name="Submit">Send</button>
 					</form>
 
 				</div>
@@ -834,12 +845,12 @@
 			<div class="row" style="text-align:center">
 				<h5 style="margin-top:0; margin-bottom:0">Big Solve Robotics™ © 2016. All Rights Reserved.</h5>
 				<div class="tags">
-					<a href="#order">Order</a>
+					<a href="order.html">Order</a>
 					<a href="index.html#testimonials">Testimonials</a>
-					<a href="#compare">Comparison</a>
+					<a href="index.html#compare">Comparison</a>
 					<a href="index.html#features">Features</a>
 					<a href="faq.html">FAQ</a>
-					<a href="#contact">Contact</a>
+					<a href="index.html#contact">Contact</a>
 				</div>
 			</div>
 

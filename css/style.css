@@ -5455,9 +5455,10 @@ h3.center_box_icon.step_circle:hover .step_number {
 /********** Call to Action (Before Footer) ***********/
 
 .u-cta {
-	background: url(../demo/home/bg.jpg) no-repeat top fixed;
+	/*background: url(../demo/home/bg.jpg) no-repeat top fixed;*/
 	position: relative;
 	overflow: hidden;
+	background-color:white;
 }
 
 .u-cta .col-md-9,.u-cta .col-md-3 {
@@ -9614,10 +9615,11 @@ footer .col-md-3:nth-child(1) img, .uh-hidden-bar .col-md-3:nth-child(1) img {
 	border: 0;
 	border-radius: 4px;
 	text-transform: uppercase;
-	margin-left: 6px;
+	margin-top: 15px;
 	font-size: 13px;
 	font-weight: 600;
 	transition:.4s;
+	width:100%;
 }
 
 .uf-newsletter input + button:hover {
@@ -15032,8 +15034,8 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
 	padding-top:70px;
 	width: 100%;
 	height: 100%;
-	/*background: rgba(41,160,151,0.7);*/
-	background-image:url('../images/Quote1.jpg')
+	background-image:url('../images/BSR-Prof2.png');
+	background-position:center;
 }
 
 #compare{
@@ -15064,4 +15066,12 @@ background: none repeat scroll 0% 0% rgba(51, 51, 51, 1);
 #bgSl4{
 	background-image: url("../images/BSR-Main.png");
 	color:white;
+}
+
+.circle-img{
+	border-radius:50%;
+}
+
+.form-row{
+	padding:0px 0px 50px 0px;
 }
