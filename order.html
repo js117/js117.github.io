@@ -258,16 +258,23 @@
           </h3>
         </div>
         <div style="text-align:center; margin: 15px 0px 15px 0px">Want to order more than 10 Apollos?
-          <a href="mailto:sale@bigsolverobotics.com?Subject=Interest%20in%20bulk%20purchase" target="_top">Contact Sales</a>
+          <br><a href="mailto:sale@bigsolverobotics.com?Subject=Interest%20in%20bulk%20purchase" target="_top">Please Contact Sales</a>
         </div>
         <div class="form_elements" style="margin:auto; width:50%;">
 
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="UJL36FM9QAW4C">
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+					<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="S3R27ZQ7ZZE7A">
 						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form>
+					</form> -->
 
           <!-- <form class="contact-form" id="contactForm" action="php/contact.php" method="post">
 
@@ -362,7 +369,7 @@
             </div>
           </form> -->
 
-          <div id="successMessage" class="successmessage">
+          <!-- <div id="successMessage" class="successmessage">
             <p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p>
           </div>
 
@@ -372,7 +379,7 @@
 
           <div id="incompleteMessage" class="statusMessage">
             <p>Please complete all the fields in the form before sending.</p>
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -380,81 +387,80 @@
   </section>
   <!-- Reserve Section -->
 
+	<footer id="contact">
+		<!-- footer -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="logo-footer"><h4><a href="#" title="Unique"><img src="images/BSR-Logo-green.png" alt="Unique"/></a></h4></div>
+					<p class="margin_top margin_top_20">Phasellus vehicula justo eget diam posuere sollicitudin en tincidunt nulla. Curabitur eleifend urna tempor magna, in scelerisque volutpat rhoncus faucibus.</p>
+					<ul class="uf-contactinfo">
+						<li><span class="icon_mail"></span>info@bigsolverobotics.com</li>
+						<li><span class="icon_phone"></span>+1 911 (77) 222-1111</li>
+						<li><span class="icon_pin"></span>40 St. George St, Toronto, ON, Canada, M5S 2E4</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<h5>Contact Us</h5>
+					<p>Curabitur eleifend urna tempor magna, in sceler volutpat honcus faucibus. Nam dapibus mollis.</p>
 
-  	<footer id="contact">
-  		<!-- footer -->
-  		<div class="container">
-  			<div class="row">
-  				<div class="col-md-6">
-  					<div class="logo-footer"><h4><a href="#" title="Unique"><img src="images/BSR-Logo-green.png" alt="Unique"/></a></h4></div>
-  					<p class="margin_top margin_top_20">Phasellus vehicula justo eget diam posuere sollicitudin en tincidunt nulla. Curabitur eleifend urna tempor magna, in scelerisque volutpat rhoncus faucibus.</p>
-  					<ul class="uf-contactinfo">
-  						<li><span class="icon_mail"></span>info@bigsolverobotics.com</li>
-  						<li><span class="icon_phone"></span>+1 911 (77) 222-1111</li>
-  						<li><span class="icon_pin"></span>40 St. George St, Toronto, ON, Canada, M5S 2E4</li>
-  					</ul>
-  				</div>
-  				<div class="col-md-6">
-  					<h5>Contact Us</h5>
-  					<p>Curabitur eleifend urna tempor magna, in sceler volutpat honcus faucibus. Nam dapibus mollis.</p>
+					<form action="http://formspree.io/tianyuan.zhao@utoronto.ca" method="post" class="uf-newsletter">
+					  <input type="text" name="name" placeholder="full name"
+						style="width:100%;
+						border:0;
+						background:#333333;
+						color:#999;
+						border-radius:4px;" required>
+						<input type="text" name="email" pattern="[^ @]*@[^ @]*" placeholder="email address" style="width:100%;
+						border:0;
+						background:#333333;
+						color:#999;
+						border-radius:4px;" required>
+						<input type="text" name="subject" placeholder="subject" style="width:100%;
+						border:0;
+						background:#333333;
+						color:#999;
+						border-radius:4px;" required>
+						<input type="text" name="body" placeholder="body" style="width:100%;
+						border:0;
+						background:#333333;
+						color:#999;
+						border-radius:4px;" required>
+						<button type="submit" name="Send" value="Send">Send</button>
+					</form>
 
-  					<form action="http://formspree.io/tianyuan.zhao@utoronto.ca" method="post" class="uf-newsletter">
-  					  <input type="text" name="name" placeholder="full name"
-  						style="width:100%;
-  						border:0;
-  						background:#333333;
-  						color:#999;
-  						border-radius:4px;" required>
-  						<input type="text" name="email" pattern="[^ @]*@[^ @]*" placeholder="email address" style="width:100%;
-  						border:0;
-  						background:#333333;
-  						color:#999;
-  						border-radius:4px;" required>
-  						<input type="text" name="subject" placeholder="subject" style="width:100%;
-  						border:0;
-  						background:#333333;
-  						color:#999;
-  						border-radius:4px;" required>
-  						<input type="text" name="body" placeholder="body" style="width:100%;
-  						border:0;
-  						background:#333333;
-  						color:#999;
-  						border-radius:4px;" required>
-  						<button type="submit" name="Send" value="Send">Send</button>
-  					</form>
+				</div>
+			</div>
 
-  				</div>
-  			</div>
+			<section class="u-social">
+				<!-- social icons -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<ul>
+								<li class="tooltip-social"><a href="#" data-toggle="tooltip" title="Facebook"><span class="social_facebook"></span></a></li>
+								<li class="tooltip-social"><a href="#" data-toggle="tooltip" title="Twitter"><span class="social_twitter"></span></a></li>
+								<!-- <li class="tooltip-social"><a href="#" data-toggle="tooltip" title="Linkedin"><span class="social_linkedin"></span></a></li> -->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-  			<section class="u-social">
-  				<!-- social icons -->
-  				<div class="container">
-  					<div class="row">
-  						<div class="col-md-12">
-  							<ul>
-  								<li class="tooltip-social"><a href="#" data-toggle="tooltip" title="Facebook"><span class="social_facebook"></span></a></li>
-  								<li class="tooltip-social"><a href="#" data-toggle="tooltip" title="Twitter"><span class="social_twitter"></span></a></li>
-  								<!-- <li class="tooltip-social"><a href="#" data-toggle="tooltip" title="Linkedin"><span class="social_linkedin"></span></a></li> -->
-  							</ul>
-  						</div>
-  					</div>
-  				</div>
-  			</section>
+			<div class="row" style="text-align:center">
+				<h5 style="margin-top:0; margin-bottom:0">Big Solve Robotics™ © 2016. All Rights Reserved.</h5>
+				<div class="tags">
+					<a href="order.html">Order</a>
+					<a href="index.html#testimonials">Testimonials</a>
+					<a href="index.html#compare">Comparison</a>
+					<a href="index.html#features">Features</a>
+					<a href="faq.html">FAQ</a>
+					<a href="index.html#contact">Contact</a>
+				</div>
+			</div>
 
-  			<div class="row" style="text-align:center">
-  				<h5 style="margin-top:0; margin-bottom:0">Big Solve Robotics™ © 2016. All Rights Reserved.</h5>
-  				<div class="tags">
-  					<a href="order.html">Order</a>
-  					<a href="index.html#testimonials">Testimonials</a>
-  					<a href="index.html#compare">Comparison</a>
-  					<a href="index.html#features">Features</a>
-  					<a href="faq.html">FAQ</a>
-  					<a href="index.html#contact">Contact</a>
-  				</div>
-  			</div>
-
-  		</div>
-  	</footer>
+		</div>
+	</footer>
 	<!-- footer -->
 
 </div>
@@ -483,10 +489,6 @@
 <script src="js/jquery.sticky.js"></script>
 
 <script src="js/unique.js"></script>
-
-<script type="text/javascript" charset="utf-8">
-	var embeddedPPFlow = new PAYPAL.apps.DGFlow({trigger: 'submitBtn'});
-</script>
 
 </body>
 </html>
