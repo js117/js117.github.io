@@ -86,9 +86,6 @@
 							<a href="index.html">Home</a>
 						</li>
 						<li>
-							<a href="index.html">Order Now</a>
-						</li>
-						<li>
 							<a href="index.html#textimonials">Testimonials</a>
 						</li>
 						<li>
@@ -96,6 +93,9 @@
 						</li>
 						<li>
 							<a href="index.html#features">Features</a>
+						</li>
+						<li>
+							<a href="index.html">Order Now</a>
 						</li>
 						<li>
 							<a href="faq.html">FAQ</a>
@@ -261,10 +261,19 @@
           <a href="mailto:sale@bigsolverobotics.com?Subject=Interest%20in%20bulk%20purchase" target="_top">Contact Sales</a>
         </div>
         <div class="form_elements" style="margin:auto; width:50%;">
-          <form class="contact-form" id="contactForm" action="php/contact.php" method="post">
+
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="S3R27ZQ7ZZE7A">
+						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+					</form>
+
+          <!-- <form class="contact-form" id="contactForm" action="php/contact.php" method="post">
+
             <div class="form-row">
               <div class="col-md-6">
-                <input type="text" name="firstName" id="firstName" placeholder="Fist Name" required>
+                <input type="text" name="senderName" id="firstName" placeholder="Fist Name" required>
               </div>
               <div class="col-md-6">
                 <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
@@ -303,7 +312,7 @@
                 <input type="text" name="phone" id="phone" placeholder="Phone" required>
               </div>
               <div class="col-md-4">
-                <input type="text" name="email" id="email" placeholder="Email" required>
+                <input type="text" name="senderEmail" id="email" placeholder="Email" required>
               </div>
               <div class="col-md-4">
                 <input type="text" name="email" id="email" placeholder="Confirm Email" required>
@@ -340,6 +349,7 @@
                 </script>
 
               </div>
+
             </div>
 
             then either CARDNUMBER and all the other necessary credit card info (expire, ccv, billing addr, etc) - OR -
@@ -350,7 +360,7 @@
             <div class="col-md-12">
               <button type="submit" class="btn-regular alignleft contact_button">Reserve Now</button>
             </div>
-          </form>
+          </form> -->
 
           <div id="successMessage" class="successmessage">
             <p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p>
@@ -473,6 +483,10 @@
 <script src="js/jquery.sticky.js"></script>
 
 <script src="js/unique.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	var embeddedPPFlow = new PAYPAL.apps.DGFlow({trigger: 'submitBtn'});
+</script>
 
 </body>
 </html>
