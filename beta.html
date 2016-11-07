@@ -251,7 +251,7 @@
             <span class="head-tngl-left1"></span>
             <span class="head-tngl-left2"></span>
             <span class="head-tngl-left3"></span>
-            Reserve <span class="highlight-color">Now</span>
+            Apollo Beta Program -<span class="highlight-color">Apply Now</span>
             <span class="head-tngl-right1"></span>
             <span class="head-tngl-right2"></span>
             <span class="head-tngl-right3"></span>
@@ -259,6 +259,7 @@
           </h3>
         </div>
 		
+		<!--- 
 		<div style="text-align:center; margin: 15px 0px 15px 0px">Pre-Order with a 10% down payment at <b>$1,295/robot</b>. 
         </div>
 		
@@ -271,114 +272,79 @@
         <div style="text-align:center; margin: 15px 0px 15px 0px">Want to order more than 10 Apollos?
           <br><a href="mailto:sale@bigsolverobotics.com?Subject=Interest%20in%20bulk%20purchase" target="_top">Please Contact Sales</a>
         </div>
-        <div class="form_elements" style="margin:auto; width:50%;">
+		--->
+		
+        <div class="form_elements" style="margin:auto; width:100%; padding:10px">
 
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="UJL36FM9QAW4C">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form>
+			<style>
+			.form-row div { margin-bottom: 10px; }
+			.form-row input[type="textarea"] { height: 100px; }
+			button { text-align: center; }
+			</style>		
 
-					<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="S3R27ZQ7ZZE7A">
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-						<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-					</form> -->
-
-          <!-- <form class="contact-form" id="contactForm" action="php/contact.php" method="post">
+           <form class="contact-form" id="contactForm" action="php/contact2.php" method="post">
 
             <div class="form-row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <input type="text" name="senderName" id="firstName" placeholder="Fist Name" required>
               </div>
-              <div class="col-md-6">
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+			  
+			  
+			  
+              <div class="form-row">
+				<div class="col-md-12">
+					<input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+				</div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md-12">
+                <input type="text" name="institution" id="inst" placeholder="Institution" required>
               </div>
             </div>
 
             <div class="form-row">
               <div class="col-md-12">
-                <input type="text" id="inst" name="institution" placeholder="Institution (Optional)">
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="col-md-12">
-                <input type="text" id="sAddress" name="sAddress" placeholder="Shipping Address">
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="col-md-3">
                 <input type="city" name="city" id="city" placeholder="City" required>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-12">
                 <input type="state/province" name="stateprov" id="stateProv" placeholder="State/Province" required>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-12">
                 <input type="text" name="country" id="country" placeholder="Country" required>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-12">
                 <input type="text" name="zipost" id="zipost" placeholder="Zip/Postal" required>
               </div>
             </div>
 
             <div class="form-row">
-              <div class="col-md-4">
+              <div class="col-md-12">
                 <input type="text" name="phone" id="phone" placeholder="Phone" required>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-12">
                 <input type="text" name="senderEmail" id="email" placeholder="Email" required>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-12">
                 <input type="text" name="email" id="email" placeholder="Confirm Email" required>
               </div>
             </div>
-
-            <div class="form-row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="sel1">Quantity:</label>
-                  <select class="form-control" id="sell" onchange="myFunction()">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                  </select>
-                </div>
+			
+			<div class="form-row">
+              <div class="col-md-12">
+				<textarea name="body" id="body" placeholder="Please describe your intended project(s), and how you plan to use the Apollo Platform. Feel free to share links and media pertaining to your related work(s)." required></textarea>
+                <!--- <input type="textarea" name="body" id="body" placeholder="Please describe your intended project(s), and how you plan to use the Apollo Platform." required> --->
               </div>
-              <div class="col-md-6">
-
-                <p id="demo">$195</p>
-
-                <script>
-                function myFunction() {
-                  var x = document.getElementById("sell").value;
-                  document.getElementById("demo").innerHTML = "$" + x*195;
-                }
-                </script>
-
-              </div>
-
             </div>
+			
 
-            then either CARDNUMBER and all the other necessary credit card info (expire, ccv, billing addr, etc) - OR -
-            PAYPAL
-            (final button) RESERVE NOW
 
             <div class="clearfix"></div>
-            <div class="col-md-12">
-              <button type="submit" class="btn-regular alignleft contact_button">Reserve Now</button>
-            </div>
-          </form> -->
+				<div class="col-md-18">
+				  <button type="submit" class="btn-regular contact_button">Apply Now</button>
+				</div>
+				
+          </form>
 
           <!-- <div id="successMessage" class="successmessage">
             <p><span class="success-ico"></span> Thanks for sending your message! We'll get back to you shortly.</p>
