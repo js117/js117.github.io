@@ -1,110 +1,486 @@
 <!DOCTYPE html>
-<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
-<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
-<!--[if gt IE 9]><!-->
+<html lang="en">
 
-<html> <!--<![endif]-->
+  <head>
 
-<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta name="asdf">
+    <title>Big Solve Robotics</title>
 
-	<title>Big Solve Robotics</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="images/BSR-Favicon.png">
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-	<!-- Google Webfont -->
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="font/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="js/owl-carousel/owl.carousel.css">
-	<link rel="stylesheet" href="js/owl-carousel/owl.theme.css">
-	<link rel="stylesheet" href="js/owl-carousel/owl.transitions.css">
-	<link rel="stylesheet" href="css/jquery-ui.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="css/jquery-sliding-menu.css">
-	<link rel="stylesheet" href="css/fhmm.css">
+  </head>
 
-	<!-- Skin CSS -->
-	<link rel="stylesheet" href="css/skins/default.css">
+  <body id="page-top">
 
-	<!-- SLIDER REVOLUTION CSS -->
-	<link rel="stylesheet" type="text/css" href="css/extralayers.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Big Solve Robotics</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#specs">Specs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#applications">Applications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about_research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about_welding">Welding</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about_electronics">Electronics</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about_education">Education</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#company">Company</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	<!-- IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
-</head>
-
-<body>
-
-	<style>
-	html,body{
-	  width:100%;
-	  height:100%;
-	  margin:0
-	}
-	div.container{
-	  position:relative;
-	  width:100%;
-	  height:100%;
-	  box-sizing:border-box;
-	  
-	}
-	.left, .right{
-		width:50%;
-		height:inherit;
-		float:left
-	}
-	a{
-	  display:block;
-	  width:100%;
-	  height:inherit
-	}
-	.left{
-	  background:url(images/main_left_base_wtext.png);
-	  background-size:contain;
-	  background-repeat: no-repeat;
-	}
-	.right{
-	  background:url(images/main_right_base_wtext.png);
-	  background-size:contain;
-	  background-repeat: no-repeat;
-	}
+    <header class="masthead">
+      <div class="header-content">
+        <div class="header-content-inner">
+          <h1 id="homeHeading">Caesar Collaborative Robot Platform</h1>
+          <hr>
+          <p>Industrial quality robots made incredibly affordable and easy to use. <br>Built for collaborative manufacturing and artificial intelligence research.</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#applications">See Applications</a>
+        </div>
+      </div>
+    </header>
 	
-	.cornerimage { position: absolute; top: 3%; left: 42%; } 
-	
-	</style>
-
-	
-	
-	
+	<section id="specs">
 	<div class="container">
-	  <div class="left">
-		<a href="apollo.html" ></a>
-	  </div>
-	  <div class="right">
-		  <a href="prometheus.html"></a>
-	  </div>
-	  
-	  <img class="cornerimage" border="0" src="images/BSR-Logo-Smaller.png" alt="">
-	  
-	</div>
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Caesar Base Specifications:</h2>
+			<ul class="lead" type="square" style="font-size:15px">
+				<li>6 DOF + neck + end effector (gripper default)</li>
+				<li>Modular end effector: welder, solder gun, or custom</li>
+				<li>Durable steel and aluminum construction</li>
+				<li>80cm reach (human arm length)</li>
+				<li>5kg max payload</li>
+				<li>+/- 0.1mm repeatability</li>
+				<li>80 deg/s joint rotation speeds</li>
+				<li>Closed loop servos with encoder feedback</li>
+				<li>Wrist + Neck Vision Sensors</li>
+				<li>Neck Depth Sensor</li>
+				<li>Standard wall outlet powered (120V/15A)</li>
+				<li>Tablet + USB laptop user interfaces</li>
+				<li>Bulk order deals and integration services!</li>
+			</ul>
+            <h2 class="section-heading">Base Cost: $8999.95 USD</h2>
+			
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <img class="img-fluid" src="img/Caesar Gripper.png" alt="">
+          </div>
+        </div>
 
-</body>
+      </div>
+	  </section>
+
+	<!---
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">It's so easy to get started.</h2>
+            <hr class="light">
+            <p class="text-faded">Just plug in</p>
+            <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+	--->
+
+    <section id="applications">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Applications</h2>
+            <hr class="primary">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <img class="img-circle" src="img/research_1_square.jpg" alt="research_icon" height="80%" width="80%" vspace="20" >
+              <h3>Research</h3>
+              <p class="text-muted">Caesar is affordable, easy to setup, and stocked with sensors. Ideal for research in robotics, AI, computer vision, deep learning, and more.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <img class="img-circle" src="img/welding_1_square.png" alt="welding_icon" height="80%" width="80%" vspace="20" >
+              <h3>Welding</h3>
+              <p class="text-muted">Let Caesar be your low cost welding assistant. Intuitive tablet interface lets blue collar workers set up weld paths and patterns.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <img class="img-circle" src="img/electronics_1_square.png" alt="electronics_icon" height="80%" width="80%" vspace="20" >
+              <h3>Electronics</h3>
+              <p class="text-muted">Caesar is ideal for a range of automation applications in electronics, such as soldering, assembly, pick-and-place, testing, and more.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box">
+              <img class="img-circle" src="img/education_1_square.png" alt="education_icon" height="80%" width="80%" vspace="20" >
+              <h3>Education</h3>
+              <p class="text-muted">Teach the next generation of engineers and manufacturers how to work with collaborative robots and drive the future economy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<!--- RESEARCH BLURB + IMAGE GALLERY --->
+	<section class="bg-primary" id="about_research">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Caesar for Research</h2>
+            <hr class="light">
+            <p class="text-faded">To drive forward research in robotics and artificial intelligence, we believe that high quality robots must become more accessible to more researchers. Caesar is affordable, sensor-equiped, and has a super easy setup: plug power into the wall, plug USB into your laptop, and use our Python API to easily control the robot, grab sensor info, and start using your favorite machine learning libraries. <br><br> We also offer bulk sale discounts to set up multi-robot learning environments, so you don't have to be Google to collect data from a room full of robots.</p>
+            <a class="btn btn-default btn-xl js-scroll-trigger" href="#contact">Contact Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+      </div>
+    </section>
+	
+	<!--- WELDING BLURB + IMAGE GALLERY --->
+	<section class="bg-primary" id="about_welding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Caesar for Welding</h2>
+            <hr class="light">
+            <p class="text-faded">We aim to be the easiest to use and setup robotic welding solution on the market, available at never-before-seen price points. Ideal for small and medium sized businesses who want to augment their welding production capabilities without making multi-million dollar investments, or needing professional roboticists on staff.<br><br>Contact us for custom solutions and integration services.</p>
+            <a class="btn btn-default btn-xl js-scroll-trigger" href="#contact">Contact Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+      </div>
+    </section>
+	
+	<!--- ELECTRONICS BLURB + IMAGE GALLERY --->
+	<section class="bg-primary" id="about_electronics">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Caesar for Electronics</h2>
+            <hr class="light">
+            <p class="text-faded">With its compact size, high precision, and low price point, Caesar is ideally suited to a multitude of assembly and testing applications in the electronics industry. Use Caesar to start automating soldering, assembly, testing, pick-and-place, and more.<br><br>Contact us for custom solutions and integration services.</p>
+            <a class="btn btn-default btn-xl js-scroll-trigger" href="#contact">Contact Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+      </div>
+    </section>
+	
+	<!--- EDUCATION BLURB + IMAGE GALLERY --->
+	<section class="bg-primary" id="about_education">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Caesar for Education</h2>
+            <hr class="light">
+            <p class="text-faded">Inspire and teach the next generation of engineers, entrepreneurs, and manufacturers. We didn't have computer labs in every college until the quality of computers started becoming integral for business, as well as affordable. Now we're on the cusp of having "robot labs" where students will learn to program and use collaborative robots, which will continue to become a bigger and bigger part of the economy.<br><br>Contact us for bulk sale discounts and setup services.</p>
+            <a class="btn btn-default btn-xl js-scroll-trigger" href="#contact">Contact Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-0" id="portfolio">
+      <div class="container-fluid">
+        <div class="row no-gutter popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+      </div>
+    </section>
+
+    <section id="company">
+	<div class="container">
+        <div class="row">
+          <div class="col-lg-5 ml-auto">
+            <hr class="section-heading-spacer">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Big Solve Robotics: Our Story</h2>
+			<p>Inspired by amazing robotics and AI research we saw in the last fews years, we decided to buy our own robot for research - until we learned that they had starting costs of at least $30K. And they were incredibly hard to use with proprietary software. Our other option was to play around with small robot toys that couldn't do anythnig useful.<br><br>It seemed like something was missing in the robotics landscape. Why are more businesses not using automation technology? Why do so few universities and colleges have robots for their engineering and computer science students to use? Why are existing robots so expensive and hard to use for anyone but a larger company?<br><br>These are the big challenges we set out to address with Big Solve Robotics.<br><br>BSR was founded in February 2016 and is led by James Schuback and Oliver Gergelj. The two engineering graduates from the University of Toronto draw on their diverse experience in electronics and semiconductors, structural mechanics, software engineering, robotics, wearable computing, data science, and machine learning. The venture is currently at an advanced prototyping and pilot trial stage, and is seeking seed funding to grow the team and reach product production.<br><br>Contact us below to learn more about the venture, become a pilot customer, work with us, or become a strategic partner. 			
+			
+			</p>
+			
+          </div>
+          <div class="col-lg-5 mr-auto">
+            <img class="img-fluid" src="img/Caesar Gripper.png" alt="">
+          </div>
+        </div>
+
+      </div>
+	  </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Contact Now</h2>
+            <hr class="primary">
+            <p>For all inquiries from customers, investors, and partners, please e-mail us and we will respond within 48 hours.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x sr-contact"></i>
+            <p>+1-647-907-8364</p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+            <p>
+              <a href="mailto:your-email@your-domain.com">info@bigsolverobotics.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
 </html>
