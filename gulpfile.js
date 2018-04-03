@@ -1,120 +1,76 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync').create();
-var header = require('gulp-header');
-var cleanCSS = require('gulp-clean-css');
-var rename = require("gulp-rename");
-var uglify = require('gulp-uglify');
-var pkg = require('./package.json');
+// Load Plugins
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
+    cleanCSS = require('gulp-clean-css'),
+    imagemin = require('gulp-imagemin'),
+    cache = require('gulp-cache'),
+    sourcemaps = require('gulp-sourcemaps'),
+    concat = require('gulp-concat')
 
-// Set the banner content
-var banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-  ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-  ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
-  ' */\n',
-  ''
-].join('');
+// Styles
+gulp.task('styles', function () {
+  return gulp.src('scss/theme.scss')
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('dist'))
+})
 
-// Compiles SCSS files from /scss into /css
-gulp.task('sass', function() {
-  return gulp.src('scss/creative.scss')
-    .pipe(sass())
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-});
+// Styles ecommerce
+gulp.task('styles-ecommerce', function () {
+  return gulp.src('scss/custom/ecommerce/theme.scss')
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sass().on('error', sass.logError))
+    .pipe(rename({basename: 'ecommerce', suffix: '.min'}))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('dist'))
+})
 
-// Minify compiled CSS
-gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/creative.css')
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('css'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-});
-
-// Minify custom JS
-gulp.task('minify-js', function() {
-  return gulp.src('js/creative.js')
+// Scripts
+gulp.task('scripts', function () {
+  return gulp.src([
+      'js/bootstrap/*.js',
+      'js/vendor/*.js',
+      'js/custom/*.js',
+      'js/theme.js'
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(concat('theme.js'))
+    .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(header(banner, {
-      pkg: pkg
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('js'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-});
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('dist'))
+})
 
-// Copy vendor files from /node_modules into /vendor
-// NOTE: requires `npm install` before running!
-gulp.task('copy', function() {
-  gulp.src([
-      'node_modules/bootstrap/dist/**/*',
-      '!**/npm.js',
-      '!**/bootstrap-theme.*',
-      '!**/*.map'
-    ])
-    .pipe(gulp.dest('vendor/bootstrap'))
+// Images
+gulp.task('images', function () {
+  gulp.src('images/**/*.+(png|jpg|jpeg|gif|svg)')
+    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('dist/images'))
+})
 
-  gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('vendor/jquery'))
-
-  gulp.src(['node_modules/magnific-popup/dist/*'])
-    .pipe(gulp.dest('vendor/magnific-popup'))
-
-  gulp.src(['node_modules/scrollreveal/dist/*.js'])
-    .pipe(gulp.dest('vendor/scrollreveal'))
-
-  gulp.src(['node_modules/popper.js/dist/umd/popper.js', 'node_modules/popper.js/dist/umd/popper.min.js'])
-    .pipe(gulp.dest('vendor/popper'))
-
-  gulp.src(['node_modules/jquery.easing/*.js'])
-    .pipe(gulp.dest('vendor/jquery-easing'))
-
-  gulp.src([
-      'node_modules/font-awesome/**',
-      '!node_modules/font-awesome/**/*.map',
-      '!node_modules/font-awesome/.npmignore',
-      '!node_modules/font-awesome/*.txt',
-      '!node_modules/font-awesome/*.md',
-      '!node_modules/font-awesome/*.json'
-    ])
-    .pipe(gulp.dest('vendor/font-awesome'))
+// Fonts
+gulp.task('fonts', function () {
+  return gulp.src('fonts/**/*')
+  .pipe(gulp.dest('dist/fonts'))
 })
 
 // Default task
-gulp.task('default', ['sass', 'minify-css', 'minify-js', 'copy']);
-
-// Configure the browserSync task
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: ''
-    },
-  })
+gulp.task('default', function () {
+  gulp.start('styles', 'styles-ecommerce', 'scripts', 'images', 'fonts')
 })
 
-// Dev task with browserSync
-gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
-  gulp.watch('scss/*.scss', ['sass']);
-  gulp.watch('css/*.css', ['minify-css']);
-  gulp.watch('js/*.js', ['minify-js']);
-  // Reloads the browser whenever HTML or JS files change
-  gulp.watch('*.html', browserSync.reload);
-  gulp.watch('js/**/*.js', browserSync.reload);
-});
+// Watch
+gulp.task('watch', function () {
+  // Watch .scss files
+  gulp.watch(['scss/**/*.scss'], ['styles', 'styles-ecommerce'])
+  // gulp.watch(['scss/**/*.scss'], ['styles'])
+
+  // Watch .js files
+  gulp.watch('js/**/*.js', ['scripts'])
+})
