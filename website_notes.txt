@@ -1,0 +1,23 @@
+---------------------
+--- WEBSITE NOTES ---
+---------------------
+
+
+WHAT WE WANT:
+
+- Decide top headers: 
+* Products (Caesar, Opus, Basis)  
+* Industries (Research, Education, Electronics, Metal Fabrication) --- see e.g. http://www.rethinkrobotics.com/industries/ 
+* News and events https://www.faro.com/news-events/
+* Company (Mission, About Us, Partners, Investor Corner, Contact) 
+
+
+
+
+
+WHAT WE CAN USE:
+
+- Can have video background: see index-video.html
+- Ecommerce: 
+
+- "call to action" : docs/cta.html 
