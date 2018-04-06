@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Empirical Automation</title>
+  <title>Spacial - Contact us</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -15,6 +15,7 @@
 
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
   <script src="dist/theme.min.js"></script>
 </head>
 <body>
@@ -26,7 +27,7 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" role="navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark " role="navigation">
     <div class="container no-override">
       <a class="navbar-brand" href="index.html">
         <img src="images/logo-alt-w.png" class="d-none d-lg-inline mr-2 w-25" />
@@ -101,65 +102,171 @@
     </div>
   </nav>
 
-  <div class="homepage-hero-module">
-    <div class="video-container">
-	
-	  <div id="video"></div>
-		
-		<div class="homepage-hero-content">	
-		
-		  <h2 class="customFadeInUp">
-			Meet <b>Caesar</b>. 
-		  </h2>
-		  <p class="customFadeInUp">
-			
-			
-			The world's most affordable industrial robotic worker. With reach, strength, precision, and vision capabilities comparable to a human, <b>Caesar</b>'s price point accessibility and ease-of-operations opens up unprecedented opportunities in physical automation. 
-		  </p>
-
-		  <div class="actions customFadeInUp">
-		  <br>
-			<a href="#" class="btn-pill btn-pill-primary btn-pill-lg">ORDER NOW</a>
-		  </div>
-	    </div>
+  <div class="agency-contact-hero">
+    <div class="container">
+      <h3 class="customFadeInUp">
+        Questions, advice or just want to say hi?
+      </h3>
     </div>
   </div>
 
-  
+  <div class="agency-contact-intro">
+    <div class="container">
+      <p>
+        For all inquiries including new business, employment opportunities or to hear more about our services, please get in touch. We'd love to help you with your new awesome project.
+      </p>
+    </div>
+  </div>
+
+  <div class="agency-contact-form">
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Your name" />
+        <input type="email" placeholder="Email address" />
+        <input type="text" placeholder="Phone number" />
+        <textarea placeholder="Message" rows="6"></textarea>
+        <input type="submit" value="Send message" />
+      </form>
+    </div>
+  </div>
+
+  <div class="agency-contact-map">
+    <div id="map"></div>
+  </div>
+
+  <div class="agency-footer mt-0">
+    <a href="#" class="go-top">
+      <i class="fa fa-angle-up"></i>
+      TOP
+    </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>About</h4>
+          <a href="#" class="legal">Portfolio</a>
+          <a href="#" class="legal">Clients</a>
+          <a href="#" class="legal">Careers</a>
+        </div>
+        <div class="col-md-3">
+          <h4>Address</h4>
+          <p>
+            10th Street 12/3
+            4580 San Francisco, Ca.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4>Contact</h4>
+          <p>
+            +81 555 489 902
+            info@spacial.com
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h4>Social</h4>
+          <a href="#" class="social first">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="social">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#" class="social">
+            <i class="fa fa-dribbble"></i>
+          </a>
+          <a href="#" class="social">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script type="text/javascript">
-    $(function() {
-      $('#video').YTPlayer({
-        fitToBackground: false,
-        videoId: '9d8wWcJLnFI',
-        pauseOnScroll: false,
-        playerVars: {
-          modestbranding: 0,
-          autoplay: 1,
-          controls: 0,
-          showinfo: 0,
-          wmode: 'transparent',
-          branding: 0,
-          rel: 0,
-          autohide: 0
-        }
-      });
-    });
-  </script>
-  
-  <script type="text/javascript">
     $(function () {
-      var trigger = new ScrollTrigger({
-        toggle: {
-          visible: 'customFadeInUp'
+      // Google maps
+      var mapLocation = new google.maps.LatLng(32.689593,-117.18039);
+
+      var map = new GMaps({
+        streetViewControl : false,
+        overviewMapControl: false,
+        mapTypeControl: false,
+        panControl : false,
+        scrollwheel: false,
+        center: mapLocation,
+        el: '#map',
+        zoom: 15,
+        styles: [
+        {
+          "featureType":"landscape",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":65},
+          {"visibility":"on"}
+          ]
         },
-        offset: {
-          y: 150
+        {
+          "featureType":"poi",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":51},
+          {"visibility":"simplified"}
+          ]
         },
-        once: true
+        {
+          "featureType":"road.highway",
+          "stylers":[
+          {"saturation":-100},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"road.arterial",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":30},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"road.local",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":40},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"transit",
+          "stylers":[
+          {"saturation":-100},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"administrative.province",
+          "stylers":[
+          {"visibility":"off"}
+          ]
+        },
+        {
+          "featureType":"water",
+          "elementType":"labels",
+          "stylers":[
+          {"visibility":"on"},
+          {"lightness":-25},
+          {"saturation":-100}
+          ]
+        }
+        ]
       });
+
+      map.addMarker({
+        position: mapLocation,
+        icon: 'images/icons/map-icon.png'
+      });
+
     });
   </script>
+
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
@@ -172,4 +279,3 @@
   </script>
 </body>
 </html>
-
