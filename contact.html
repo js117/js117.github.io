@@ -17,6 +17,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
   <script src="dist/theme.min.js"></script>
+  
+  <script>
+		function validateForm()
+		{
+		  var fields = ["your_name", "company", "email", "email", "message"]
+
+		  var i, l = fields.length;
+		  var fieldname;
+		  for (i = 0; i < l; i++) {
+			fieldname = fields[i];
+			if (document.forms["register"][fieldname].value === "") {
+			  alert(fieldname + " can not be empty");
+			  return false;
+			}
+		  }
+		  return true;
+		}
+	</script>
+  
 </head>
 <body>
   <!--[if lt IE 9]>
@@ -116,13 +135,12 @@
 
   <div class="agency-contact-form">
     <div class="container">
-      <form>
-        <input type="text" placeholder="Your name" />
-		<input type="text" placeholder="Subject" />
-        <input type="email" placeholder="Email address" />
-        <input type="text" placeholder="Phone number" />
-        <textarea placeholder="Message" rows="6"></textarea>
-        <input type="submit" value="Send message" />
+      <form onsubmit="return validateForm();" name="register" action="https://formspree.io/iiJDSii@gmail.com" method="POST">
+        <input type="text" name="your_name" placeholder="Your name" />
+		<input type="text" name="company" placeholder="Company / Organization" />
+        <input type="email" name="email" placeholder="Email address" />
+        <textarea name="message" placeholder="Message" rows="6"></textarea>
+        <input type="submit" name="submit" value="Send message" />
       </form>
     </div>
   </div>
