@@ -102,13 +102,16 @@
       </div>
     </div>
   </nav>
+  
+  <br><br>
+  <h1 style="text-align: center;">Caesar Order Form</h1>
 
   <div id="checkout">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <section>
-            <h1>Client information</h1>
+            <h1>Customer information</h1>
 
             <div class="field-group">
               <div class="field">
@@ -121,6 +124,33 @@
               </div>
             </div>
 
+			<h2>
+              Your order
+            </h2>
+
+            <div class="field-group">
+              
+              <div style="text-align: center;" class="field field--with-dropdown clearfix">
+                <label for="field-qty">Caesar Quantity</label>
+                <select style="text-align: center;" id="field-qty-num" onchange="qty_change()">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+				  <option>9</option>
+                </select>
+				
+              </div>
+              <div class="field">
+                <label for="field-phone">Opus Software</label>
+                <input id="field-phone" type="text" class="form-control" placeholder="Included for free!" readonly />
+              </div>
+            </div>
+			
             <h2>
               Shipping address
             </h2>
@@ -141,9 +171,11 @@
               <div class="field field--with-dropdown clearfix">
                 <label for="field-country">Country</label>
                 <select id="field-country">
-                  <option>Country</option>
                   <option>United States</option>
                   <option>Canada</option>
+				  <option>China</option>
+				  <option>South Korea</option>
+				  <option>Japan</option>
                   <option>France</option>
                   <option>UK</option>
                   <option>Germany</option>
@@ -171,53 +203,54 @@
             <div class="line-items">
               <div class="item clearfix">
                 <div class="pic">
-                  <img src="images/ecommerce/product-11.jpg" class="img-responsive" />
+                  <img src="caesar_small.jpg" class="img-responsive" />
                 </div>
                 <div class="details">
                   <span class="name">
-                    Blue Elegant Pull-over Shirt x 1
+                    Caesar Robot Platform
                   </span>
                   <span class="variant">
-                    Long-sleeve
+                    Base Model
                   </span>
                 </div>
                 <div class="price float-right">
-                  $200.00
+                  $2999.95/ea
                 </div>
               </div>
               <div class="item clearfix">
                 <div class="pic">
-                  <img src="images/ecommerce/product-12.jpg" class="img-responsive" />
+                  <img src="opus_small.jpg" class="img-responsive" />
                 </div>
                 <div class="details">
                   <span class="name">
-                    Long-sleeve Formal Shirt x 2
+                    Opus Software Platform
                   </span>
                   <span class="variant">
-                    M size
+                    Version 1.0.1
                   </span>
                 </div>
                 <div class="price float-right">
-                  $349.00
+                  Free!
                 </div>
               </div>
             </div>
             <div class="price-details">
               <div class="detail clearfix">
                 <p>Subtotal</p>
-                <span>$549.99</span>
+                <span id="total_robot">$2999.95</span>
               </div>
               <div class="detail clearfix">
                 <p>Shipping</p>
-                <span>$39.99</span>
+				
+                <span id="total_shipping">$496.22</span>
               </div>
               <div class="detail clearfix">
                 <p>Taxes</p>
-                <span>$15.00</span>
+                <span id="total_taxes">$389.99</span>
               </div>
               <div class="total-price clearfix">
                 <p>Total payment</p>
-                <span>$605.00</span>
+                <span id="total_payment">$3886.16</span>
               </div>
             </div>
           </div>
@@ -225,6 +258,55 @@
       </div>
     </div>
   </div>
+  
+  <script>
+  function qty_change() {
+  
+	  price_robot = 2999.95;
+	  price_shipping = 496.22;
+	  price_taxes = 389.99;
+	  quantity = document.getElementById("field-qty-num").value;
+	  //alert(quantity);
+	  
+	  total_price_robot = quantity*price_robot; 
+	  total_price_shipping = quantity*price_shipping; 
+	  total_price_taxes = quantity*price_taxes; 
+	  total_payment = total_price_robot + total_price_shipping + total_price_taxes;
+	  
+	  total_price_robot = parseFloat(Math.round(total_price_robot * 100) / 100).toFixed(2);
+	  total_price_shipping = parseFloat(Math.round(total_price_shipping * 100) / 100).toFixed(2);
+	  total_price_taxes = parseFloat(Math.round(total_price_taxes * 100) / 100).toFixed(2);
+	  total_payment = parseFloat(Math.round(total_payment * 100) / 100).toFixed(2);
+	  
+	  span = document.getElementById("total_robot");
+	  span.innerHTML = '';
+	  txt = document.createTextNode("$".concat(total_price_robot.toString()));
+	  span.appendChild(txt);
+	  
+	  span = document.getElementById("total_shipping");
+	  span.innerHTML = '';
+	  txt = document.createTextNode("$".concat(total_price_shipping.toString()));
+	  span.appendChild(txt);
+	  
+	  span = document.getElementById("total_taxes");
+	  span.innerHTML = '';
+	  txt = document.createTextNode("$".concat(total_price_taxes.toString()));
+	  span.appendChild(txt);
+	  
+	  span = document.getElementById("total_payment");
+	  span.innerHTML = '';
+	  txt = document.createTextNode("$".concat(total_payment.toString()));
+	  span.appendChild(txt);
+	  
+	  //res = "asdfasdf".concat(number.toString())
+    
+      //document.getElementById("demo").innerHTML = res;
+	  return total_payment;
+	  
+  }
+  
+  
+  </script>
 
   <footer class="footer-big-menu" id="footer">
     <div class="container">
