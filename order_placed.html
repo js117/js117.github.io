@@ -11,12 +11,31 @@
   <link rel="shortcut icon" href="images/favicon.ico">
 
   <!-- stylesheets -->
-  <link rel="stylesheet" type="text/css" href="dist/ecommerce.min.css" />
   <link rel="stylesheet" type="text/css" href="dist/theme.min.css" />
 
   <!-- javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlYNNs7VBO71qiKFMNiD0R9sd8hOt0wD4"></script>
   <script src="dist/theme.min.js"></script>
+  
+  <script>
+		function validateForm()
+		{
+		  var fields = ["your_name", "company", "email", "email", "message"]
+
+		  var i, l = fields.length;
+		  var fieldname;
+		  for (i = 0; i < l; i++) {
+			fieldname = fields[i];
+			if (document.forms["register"][fieldname].value === "") {
+			  alert(fieldname + " can not be empty");
+			  return false;
+			}
+		  }
+		  return true;
+		}
+	</script>
+  
 </head>
 <body>
   <!--[if lt IE 9]>
@@ -102,212 +121,18 @@
       </div>
     </div>
   </nav>
+
   
-  <br><br>
-  <h1 style="text-align: center;">Caesar Order Form</h1>
-  <h6 style="text-align: center;">Please <a href="contact.html">contact us</a> for bulk and custom orders.</h6>
 
-  <div id="checkout">
+  <div class="agency-contact-intro">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <section>
-            <h1>Customer information</h1>
-
-            <div class="field-group">
-              <div class="field">
-                <label for="field-name">Your name</label>
-                <input id="field-name" type="text" class="form-control" placeholder="Your full name" />
-              </div>
-              <div class="field">
-                <label for="field-email">Email address</label>
-                <input id="field-email" type="email" class="form-control" placeholder="Email address" />
-              </div>
-            </div>
-
-			<h2>
-              Your order
-            </h2>
-
-            <div class="field-group">
-              
-              <div style="text-align: center;" class="field field--with-dropdown clearfix">
-                <label for="field-qty">Caesar Quantity</label>
-                <select style="text-align: center;" id="field-qty-num" onchange="qty_change()">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-				  <option>9</option>
-                </select>
-				
-              </div>
-              <div class="field">
-                <label for="field-phone">Opus Software</label>
-                <input id="field-phone" type="text" class="form-control" placeholder="Included for free!" readonly />
-              </div>
-            </div>
-			
-            <h2>
-              Shipping address
-            </h2>
-
-            <div class="field-group">
-              <div class="field">
-                <label for="field-address">Address</label>
-                <input id="field-address" type="text" class="form-control" placeholder="Street, interior number, etc" />
-              </div>
-              <div class="field">
-                <label for="field-city">City</label>
-                <input id="field-city" type="text" class="form-control" placeholder="City" />
-              </div>
-              <div class="field">
-                <label for="field-zip">ZIP Code</label>
-                <input id="field-zip" type="text" class="form-control" placeholder="ZIP Code" />
-              </div>
-              <div class="field field--with-dropdown clearfix">
-                <label for="field-country">Country</label>
-                <select id="field-country">
-                  <option>United States</option>
-                  <option>Canada</option>
-				  <option>China</option>
-				  <option>South Korea</option>
-				  <option>Japan</option>
-                  <option>France</option>
-                  <option>UK</option>
-                  <option>Germany</option>
-                  <option>Belgium</option>
-                  <option>Australia</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="field-phone">Phone</label>
-                <input id="field-phone" type="text" class="form-control" placeholder="Phone" />
-              </div>
-            </div>
-
-            <div class="text-right">
-              <a href="checkout-payment.html" class="checkout-btn-next-step">
-                Shipping & Payment
-                <i class="ion-chevron-right"></i>
-              </a>
-            </div>
-          </section>
-        </div>
-        <div class="col-md-6">
-          <div id="checkout-cart-summary" class="clearfix float-right">
-            <h3>Order Summary ($USD)</h3>
-            <div class="line-items">
-              <div class="item clearfix">
-                <div class="pic">
-                  <img src="caesar_small.jpg" class="img-responsive" />
-                </div>
-                <div class="details">
-                  <span class="name">
-                    Caesar Robot Platform
-                  </span>
-                  <span class="variant">
-                    Base Model
-                  </span>
-                </div>
-                <div class="price float-right">
-                  $2999.95/ea
-                </div>
-              </div>
-              <div class="item clearfix">
-                <div class="pic">
-                  <img src="opus_small.jpg" class="img-responsive" />
-                </div>
-                <div class="details">
-                  <span class="name">
-                    Opus Software Platform
-                  </span>
-                  <span class="variant">
-                    Version 1.0.1
-                  </span>
-                </div>
-                <div class="price float-right">
-                  Free!
-                </div>
-              </div>
-            </div>
-            <div class="price-details">
-              <div class="detail clearfix">
-                <p>Subtotal</p>
-                <span id="total_robot">$2999.95</span>
-              </div>
-              <div class="detail clearfix">
-                <p>Shipping</p>
-				
-                <span id="total_shipping">$496.22</span>
-              </div>
-              <div class="detail clearfix">
-                <p>Taxes</p>
-                <span id="total_taxes">$389.99</span>
-              </div>
-              <div class="total-price clearfix">
-                <p>Total payment</p>
-                <span id="total_payment">$3886.16</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+		<h1 style="text-align: center;">Thank you for your order.</h1>
+      <p>
+        We will be in touch shortly, and send you updates on the status of your order. Feel free to <a href="contact.html">contact us</a> anytime if you have any questions.
+      </p>
     </div>
   </div>
-  
-  <script>
-  function qty_change() {
-  
-	  price_robot = 2999.95;
-	  price_shipping = 496.22;
-	  price_taxes = 389.99;
-	  quantity = document.getElementById("field-qty-num").value;
-	  //alert(quantity);
-	  
-	  total_price_robot = quantity*price_robot; 
-	  total_price_shipping = quantity*price_shipping; 
-	  total_price_taxes = quantity*price_taxes; 
-	  total_payment = total_price_robot + total_price_shipping + total_price_taxes;
-	  
-	  total_price_robot = parseFloat(Math.round(total_price_robot * 100) / 100).toFixed(2);
-	  total_price_shipping = parseFloat(Math.round(total_price_shipping * 100) / 100).toFixed(2);
-	  total_price_taxes = parseFloat(Math.round(total_price_taxes * 100) / 100).toFixed(2);
-	  total_payment = parseFloat(Math.round(total_payment * 100) / 100).toFixed(2);
-	  
-	  span = document.getElementById("total_robot");
-	  span.innerHTML = '';
-	  txt = document.createTextNode("$".concat(total_price_robot.toString()));
-	  span.appendChild(txt);
-	  
-	  span = document.getElementById("total_shipping");
-	  span.innerHTML = '';
-	  txt = document.createTextNode("$".concat(total_price_shipping.toString()));
-	  span.appendChild(txt);
-	  
-	  span = document.getElementById("total_taxes");
-	  span.innerHTML = '';
-	  txt = document.createTextNode("$".concat(total_price_taxes.toString()));
-	  span.appendChild(txt);
-	  
-	  span = document.getElementById("total_payment");
-	  span.innerHTML = '';
-	  txt = document.createTextNode("$".concat(total_payment.toString()));
-	  span.appendChild(txt);
-	  
-	  //res = "asdfasdf".concat(number.toString())
-    
-      //document.getElementById("demo").innerHTML = res;
-	  return total_payment;
-	  
-  }
-  
-  
-  </script>
+
 
   <footer class="footer-big-menu" id="footer">
     <div class="container">
@@ -367,6 +192,94 @@
     </div>
     <span class="bottom">© 2019 Empirical Automation. All rights reserved.</span> <!---  <a href="#">Terms of use</a> --->
   </footer>
+
+  <script type="text/javascript">
+    $(function () {
+      // Google maps
+      var mapLocation = new google.maps.LatLng(32.689593,-117.18039);
+
+      var map = new GMaps({
+        streetViewControl : false,
+        overviewMapControl: false,
+        mapTypeControl: false,
+        panControl : false,
+        scrollwheel: false,
+        center: mapLocation,
+        el: '#map',
+        zoom: 15,
+        styles: [
+        {
+          "featureType":"landscape",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":65},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"poi",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":51},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"road.highway",
+          "stylers":[
+          {"saturation":-100},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"road.arterial",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":30},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"road.local",
+          "stylers":[
+          {"saturation":-100},
+          {"lightness":40},
+          {"visibility":"on"}
+          ]
+        },
+        {
+          "featureType":"transit",
+          "stylers":[
+          {"saturation":-100},
+          {"visibility":"simplified"}
+          ]
+        },
+        {
+          "featureType":"administrative.province",
+          "stylers":[
+          {"visibility":"off"}
+          ]
+        },
+        {
+          "featureType":"water",
+          "elementType":"labels",
+          "stylers":[
+          {"visibility":"on"},
+          {"lightness":-25},
+          {"saturation":-100}
+          ]
+        }
+        ]
+      });
+
+      map.addMarker({
+        position: mapLocation,
+        icon: 'images/icons/map-icon.png'
+      });
+
+    });
+  </script>
+
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
