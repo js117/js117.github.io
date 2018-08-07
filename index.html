@@ -32,6 +32,8 @@
     <meta name="theme-color" content="#ffffff">--->
 	
 	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="icon" href="http://www.yoursite.com/favicon.ico?v=2" />
+
 	
     <!--  
     Stylesheets
@@ -72,6 +74,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="index.html">Empirical Vision</a></li>
                   <li><a href="caesar.html">Caesar Robot Platform</a></li>
+				  <li><a href="basis.html">Basis Robot Simulator</a></li>
                   
                 </ul>
               </li>
@@ -636,7 +639,7 @@
             </div>
             <div class="row">
               <div class="col-sm-6 col-sm-offset-3">
-                <form id="contactForm" onsubmit="return true;"  method="POST" action="https://formspree.io/info@empiricalautomation.com">
+                <form id="contactForm" onsubmit="return alert('Message received - please verify captcha below.');"  method="POST" action="https://formspree.io/info@empiricalautomation.com">
                   <div class="form-group">
                     <label class="sr-only" for="name">Name</label>
                     <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
