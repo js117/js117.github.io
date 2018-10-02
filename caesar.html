@@ -81,41 +81,64 @@
           </div>
         </div>
       </nav>
+	  
+	  <section class="home-section home-full-height bg-dark-30" id="home" >
+        <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=VVfVqiEXkpU', containment:'.home-section', startAt:7, mute:true, autoPlay:true, loop:true, opacity:2, showControls:false, showYTLogo:false, vol:25}"></div>
+        <div class="video-controls-box">
+          <div class="container">
+            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
+          </div>
+        </div>
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-30 titan-title-size-2"><br>Empirical Automation</div>
+            <div class="font-alt mb-40 titan-title-size-4">Robots That Learn.</div><a class="section-scroll btn btn-border-w btn-round" href="#specs">Specs</a>
+          </div>
+        </div>
+      </section>
+	  
+	  <!--
       <section class="home-section home-full-height bg-dark bg-gradient" style="text-align: center;" id="home" data-background="assets/images/caesar_bg.jpg">
         <div class="titan-caption">
           <div class="caption-content">
             <div class="font-alt mb-30 titan-title-size-1" >Robotics and Artificial Intelligence for Factory Automation</div>
             <div class="font-alt mb-40 titan-title-size-4">Empirical Automation</div><a class="section-scroll btn btn-border-w btn-round video-pop-up" href="https://www.youtube.com/watch?v=SSbWXOr-hJM">The Empirical Difference</a>
-			<!---<a class="video-pop-up" href="https://www.youtube.com/watch?v=elgG52Grwjo"><span class="icon-video"></span></a>-->
+			<a class="video-pop-up" href="https://www.youtube.com/watch?v=elgG52Grwjo"><span class="icon-video"></span></a>
           </div>
         </div>
       </section>
+	  -->
+	  
+	  
       <div class="main">
         <section class="module" id="caesar">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-                <h2 class="module-title font-alt">Meet Caesar: <br>The Robot Worker of the Future</h2>
-                <div class="module-subtitle font-alt">Your powerful human-sized, sensor-enabled industrial robot that's up and running within 5 minutes. Create and setup automation tasks with no technical background. A revolution in robotic accessibility and affordability.
+              <div class="col-sm-10 col-sm-offset-1">
+                <h2 class="module-title font-alt">Meet <b>Caesar:</b> <br>The Robot Worker of the Future</h2>
+                <div class="module-subtitle font-alt">We make robots that are smart and affordable.<br><br>Using Machine Learning and Artificial Intelligence, we are teaching robots how to work.
+				
 </div>
               </div>
             </div>
 			
+			<div style="display: flex; justify-content: center;">
+			  <img src="assets/images/caesar_features.jpg" style="width: 1008px; height: 756px;" />
+			</div>
+			<br><br>
 			
+			<!--
 			<ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
-            <li class="work-item illustration webdesign"><!--<a href="portfolio-single-1.html">-->
                 <div class="work-image"><img src="assets/images/caesar_1.jpg" alt="Portfolio Item"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title"><b>Quick Deployment and Integration</b></h3>
                   <div class="work-title">Teach Caesar your automation tasks using a game controller or laptop, and have him working within minutes! No technical background required. </div>
                 </div></a></li>
-            <li class="work-item marketing photography"><!--<a href="portfolio-single-1.html">-->
                 <div class="work-image"><img src="assets/images/caesar_2.jpg" alt="Portfolio Item"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title"><b>Many Industries and Applications</b></h3>
                   <div class="work-title">From basic machine tending, to electronics assembly, to pick and place, packaging, and more: Caesar is ready for work.</div>
                 </div></a></li>
-            <li class="work-item illustration photography"><!--<a href="portfolio-single-1.html">-->
                 <div class="work-image"><img src="assets/images/caesar_3.jpg" alt="Portfolio Item"/></div>
                 <div class="work-caption font-alt">
                   <h3 class="work-title"><b>Research and Education</b></h3>
@@ -123,27 +146,27 @@
                 </div></a></li>
 				
             
-          </ul>
+			</ul>-->
 		  
 		  
 		  
-		  <div class="module-subtitle font-alt" style="text-align: center;"><br><br><b>Full Specs List:</b></div>
-		  <div class="module-subtitle font-alt" style="text-align: left;">
-				<b>Degrees of Freedom:</b> 6 on arm, plus gripper, plus neck<br>
-				<b>Reach:</b> 800mm, as measured from base joint<br>
-				<b>Payload:</b> 2.3 kg / 5 lbs<br>
+		  <div class="module-subtitle font-alt" style="text-align: left;" id="specs">
+				<b>Degrees of Freedom:</b> 6 on arm, including gripper, plus neck<br>
+				<b>Reach:</b> 920mm from base<br>
+				<b>Payload:</b> 350g<br>
 				<b>Task Repeatability:</b> +/- 0.5mm<br>
-				<b>Joint Speeds:</b> maximum 150 deg/s<br>
+				<b>Joint Speeds:</b> maximum 300 deg/s<br>
 				<b>Electronics and Wiring:</b> self-contained; two wire output from robot; 3 prong power cord, USB<br>
-				<b>Materials:</b> steel and aluminum<br>
-				<b>Weight:</b> 68kg / 150lbs<br>
-				<b>Height:</b> 150cm <br>
-				<b>Sensors:</b> RGB cameras on neck and wrist; upgrades available<br>
-				<b>End Effector:</b> default 2 finger gripper included<br>
-				<b>User Interfaces:</b> software includes desktop program accessible over USB; tablet/mobile support<br>
+				<b>Materials:</b> aircraft grade aluminum, PLA and advanced polymers<br>
+				<b>Weight:</b> 35 lbs<br>
+				<b>Height:</b> 750mm <br>
+				<b>Sensors:</b> Depth sensor neck sensor; upgrades available<br>
+				<b>End Effector:</b> default 2 finger gripper included, 90mm opening<br>
+				<b>User Interfaces:</b> C/C++, Python software libraries; desktop programs accessible over USB; tablet/mobile support<br>
 				<b>Physical Mounting:</b> base has 4 square corner mount points, M8 hole size<br>
 				<b>Extensions and Upgrades:</b> customizable end-effector; replaceable arm structure from base; modular joint configs<br>
-				<b>Base Price:</b> $4995.95 USD
+				<b>Customizations available upon request: reach, payload, speed.</b><br>
+				<h2><b>Base Price:</b> $4995.95 USD</h2> (researchers and developers only - <a href="caesar.html#contact">Contact Us	</a>)
 		  
 				</div>
 			
@@ -197,7 +220,7 @@
             <div class="row">
               <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
                 <div class="callout-text font-alt">
-                  <h3 class="callout-title">Demos, Deployments, and Integration</h3>
+                  <h3 class="callout-title">Sales and Custom Development</h3>
                   <p>Let's make it happen.</p>
                 </div>
               </div>
@@ -208,7 +231,85 @@
           </div>
         </section>
 		
+		<hr class="divider-w">
+        <section class="module" id="team">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Team</h2>
+                <div class="module-subtitle font-alt">World Class Entrepreneurs, Engineers, and Data Scientists Make the Empirical Difference.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="assets/images/team_james.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt"><b>James Schuback</b><br>Founder and CEO</h5>
+                      <p class="font-serif">Serial entrepreneur and inventor. Developed and sold IP from previous wearable tech startup; robotics and AI expert; built startups and raised capital across North America and Asia; Next Canada Entrepreneur; University of Toronto Engineering Science.</p>
+                      <!--<div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>-->
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">James Schuback</div>
+                    <div class="team-role">CEO</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="assets/images/team_shenglong.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt"><b>Shenglong Gao</b><br>Chief Product Officer</h5>
+                      <p class="font-serif">Builds products used by millions. Serial entrepreneur and fundraiser; angel investor; user experience guru; Next Canada Entrepreneur; Cornell University Physics and University of Western Ontario Computer Science & Finance.</p>
+                      <!--<div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>-->
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Shenglong Gao</div>
+                    <div class="team-role">CPO</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="assets/images/team_oliver.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt"><b>Oliver Gergelj</b><br>Chief Technical Officer</h5>
+                      <p class="font-serif">'The Rain Man' - nobody does data science and statistical inference better. Creator of financial analysis tools used religiously on Wall Street; wearable tech algorithm inventor; AI speaker and lecturer; University of Toronto Engineering Science.</p>
+                      <!--<div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>-->
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Oliver Gergelj</div>
+                    <div class="team-role">CTO</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-sm-20 wow fadeInUp col-sm-6 col-md-3" onclick="wow fadeInUp">
+                <div class="team-item">
+                  <div class="team-image"><img src="assets/images/team_ken.jpg" alt="Member Photo"/>
+                    <div class="team-detail">
+                      <h5 class="font-alt"><b>Ken Yang</b><br>Chief Financial Officer</h5>
+                      <p class="font-serif">Serial entrepreneur in hardware, AI, and blockchain technologies. Turns futuristic tech into startups, including EyeTap and Splashtones; renowned classical pianist and music tech enthusiast; University of Toronto Doctor of Law, Piano Performance, and Psychology. </p>
+                      <!--<div class="team-social"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a></div>-->
+                    </div>
+                  </div>
+                  <div class="team-descr font-alt">
+                    <div class="team-name">Ken Yang</div>
+                    <div class="team-role">CFO</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 		
+		<section class="module-small bg-dark">
+          <div class="container">
+            
+          </div>
+        </section>
         
         <section class="module" id="contact">
           <div class="container">
