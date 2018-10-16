@@ -171,7 +171,7 @@ a,
 
 /* Module header */
 .module-small {
-  padding: 70px 0;
+  padding: 10px 0;
 }
 
 .module-extra-small {
@@ -179,7 +179,7 @@ a,
 }
 
 .module-medium {
-  padding: 75px 0px;
+  padding: 15px 0px;
 }
 
 .holder-w {
@@ -913,14 +913,14 @@ blockquote {
   font-weight: 400;
   font-size: 30px;
   color: #111;
-  margin: 0 0 70px;
+  margin: 0 0 0px;
 }
 
 .module-subtitle {
   text-align: center;
   font-size: 16px;
   color: #111;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
 }
 
 .module-icon {
@@ -930,7 +930,7 @@ blockquote {
 }
 
 .module-title + .module-subtitle {
-  margin-top: -35px;
+  margin-top: 0px;
 }
 
 /* Restaurant module header */
@@ -952,7 +952,7 @@ blockquote {
 }
 
 .finance-image-content .module-title {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .finance-image-content .alt-features-item {
@@ -965,8 +965,8 @@ blockquote {
 }
 
 .landing-reason .module-title + .module-subtitle {
-  margin-top: -60px;
-  margin-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .free-trial {
