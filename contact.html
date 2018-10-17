@@ -102,49 +102,87 @@
       </nav>
 	  
 	  
-      <section class="home-section home-full-height bg-dark bg-gradient" style="text-align: center;" id="home" data-background="assets/images/controllerplusbg.jpg">
-        <div class="titan-caption">
-          <div class="caption-content">
-            <div class="font-alt mb-30 titan-title-size-1" >Artificial Intelligence for Factory Automation and Productivity   </div>
-            <div class="font-alt mb-40 titan-title-size-4">Controller+</div>
-			<!---<a class="video-pop-up" href="https://www.youtube.com/watch?v=elgG52Grwjo"><span class="icon-video"></span></a>-->
-          </div>
-        </div>
-      </section>
+	  
       <div class="main">
-        <section class="module" id="vision">
-          <div >
-            <div class="row">
-              <div class="col-sm-6 col-sm-offset-3">
-			  
-				<h2 class="module-title font-alt"><b>Advanced Robot Motion Planning & Optimization</b><br><br></h2>
-                <div class="module-subtitle font-alt"><b>Leverage AI to Increase Output.</b><br>Controller+ is a software optimization tool that makes robots work more efficiently by optimizing human-trained motion paths and goals.</div>
-				
-				<div class="module-subtitle font-alt"><b>Save Energy and Time.</b><br> More efficient robot motions means you save electricity, while executing tasks faster.</div>
-				
-				<div class="module-subtitle font-alt"><b>Intuitive and Empowering.</b><br>No engineering degree required. Empower your existing staff to setup and optimize robot automation tasks. </div>
-				
-			  
-                <h2 class="module-title font-alt"><b><br>Public Availability Coming Soon.</b></h2>
-               
-              </div>
-            </div>
-			
-			
-			
-          </div>
-  
-        <section class="module-small bg-dark">
+        <section class="module bg-dark-60 about-page-header" data-background="assets/images/aboutusbg.jpg">
           <div class="container">
             <div class="row">
-              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
-                <div class="callout-text font-alt">
-                  <h3 class="callout-title">Become a Beta Trial User</h3>
-                  <p>Get Ahead of the Curve</p>
-                </div>
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt"><b>Contact Us</b></h2>
+				
+                <div class="module-subtitle font-alt"></div>
+				
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-2">
-                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="contact.html">Contact Us Today</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-sm-offset-0">
+                <h2 class="module-title font-alt"><br>We value your time.<br>Our team will reply within 24 hours.</h2>
+				
+				
+				
+              </div>
+
+            </div>
+            
+			
+			
+        </section>
+		
+		<section class="module" id="contact" style="padding-top: 20px">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <div class="module-subtitle font-serif"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <form id="contactForm" role="form" method="post" action="php/contact.php">
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Your Name*" required="required" data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Your Email*" required="required" data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+				  <div class="form-group">
+					<select class="form-control" name="">
+					  <option value="1">(Please select the nature of your inquiry)</option>
+					  <option value="2">Project Consultation and Quote Related</option>
+					  <option value="3">Robotic Platform Related</option>
+					  <option value="4">Software Product Related</option>
+					  <option value="5">Customer Service Related</option>
+					  <option value="6">Investor Relations Related</option>
+					  <option value="7">Press Inquiry Related</option>
+					  <option value="8">Other (Please Specify in Message)</option>
+					</select>
+				  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Your Message*" required="required" data-validation-required-message="Please enter your message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+                  </div>
+                </form>
+                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="alt-features-item mt-0">
+                  <div class="alt-features-icon"><span class="icon-megaphone"></span></div>
+                  <h3 class="alt-features-title font-alt">Need a specific department?</h3>Please specify the department name<br> at the beginning of your message.
+                </div>
+                <div class="alt-features-item mt-xs-60">
+                  <div class="alt-features-icon"><span class="icon-map"></span></div>
+                  <h3 class="alt-features-title font-alt">Form Trouble?</h3>Feel free to e-mail us directly: <br>info@empiricalautomation.com
+                </div>
               </div>
             </div>
           </div>
@@ -153,71 +191,7 @@
 		
 		
 		
-        <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              
-              
-            </div>
-          </div>
-        </div>
         
-        <div class="module-small bg-dark">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-3">
-                
-              </div>
-			  <!---
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Recent Comments</h5>
-                  <ul class="icon-list">
-                    <li>Maria on <a href="#">Designer Desk Essentials</a></li>
-                    <li>John on <a href="#">Realistic Business Card Mockup</a></li>
-                    <li>Andy on <a href="#">Eco bag Mockup</a></li>
-                    <li>Jack on <a href="#">Bottle Mockup</a></li>
-                    <li>Mark on <a href="#">Our trip to the Alps</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Blog Categories</h5>
-                  <ul class="icon-list">
-                    <li><a href="#">Photography - 7</a></li>
-                    <li><a href="#">Web Design - 3</a></li>
-                    <li><a href="#">Illustration - 12</a></li>
-                    <li><a href="#">Marketing - 1</a></li>
-                    <li><a href="#">Wordpress - 16</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-sm-3">
-                <div class="widget">
-                  <h5 class="widget-title font-alt">Popular Posts</h5>
-                  <ul class="widget-posts">
-                    <li class="clearfix">
-                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-1.jpg" alt="Post Thumbnail"/></a></div>
-                      <div class="widget-posts-body">
-                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
-                        <div class="widget-posts-meta">23 january</div>
-                      </div>
-                    </li>
-                    <li class="clearfix">
-                      <div class="widget-posts-image"><a href="#"><img src="assets/images/rp-2.jpg" alt="Post Thumbnail"/></a></div>
-                      <div class="widget-posts-body">
-                        <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
-                        <div class="widget-posts-meta">15 February</div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-			  --->
-            </div>
-          </div>
-        </div>
         <hr class="divider-d">
         <footer class="footer bg-dark">
           <div class="container">
@@ -234,7 +208,6 @@
         </footer>
       </div>
       <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
-      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
     </main>
     <!--  
     JavaScripts
@@ -247,11 +220,10 @@
     <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
     <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
     <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
-    <!--<script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>-->
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="assets/lib/smoothscroll.js"></script>
     <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
-    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
