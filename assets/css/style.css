@@ -1370,12 +1370,28 @@ General Styles - Owlcarousel
 --------------------------------------------------------------*/
 .home-section {
   position: relative;
-  background-color: #fff;
+  background-color: #000;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
   z-index: 0;
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: contain;
+  margin-top: 0px;
+  
+}
+
+.home-section2 {
+  position: relative;
+  background-color: #FFF;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  z-index: 0;
+  /* background-size: cover; */
+  background-size: contain;
+  margin-top: 0px;
+  
 }
 
 .titan-title-size-1 {
@@ -1935,7 +1951,7 @@ Google map
 
 .work-title {
   font-size: 14px;
-  color: #fff;
+  color: #000;
   margin: 0 0 6px;
 }
 
